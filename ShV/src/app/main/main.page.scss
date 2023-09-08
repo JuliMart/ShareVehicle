@@ -1,0 +1,17 @@
+
+
+  .custom-card {
+    width: 300px; /* Establece el ancho de la tarjeta en 200px */
+    height: 280px; /* Establece la altura de la tarjeta en 300px */;
+    left:0 ;
+    right: 0;
+    text-align: center;
+    
+  }
+  .card-container {
+  display: flex;
+  flex-direction: column; /* Las tarjetas estarán apiladas verticalmente */
+  align-items: center; /* Centra las tarjetas horizontalmente */
+  justify-content: center; /* Centra las tarjetas verticalmente en la página */
+  height: 95vh; /* Establece la altura del contenedor para que ocupe el 100% del alto de la ventana */
+}
