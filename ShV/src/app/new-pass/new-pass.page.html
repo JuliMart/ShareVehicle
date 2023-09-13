@@ -13,12 +13,15 @@
     <div class="content">
       <div class="ion-input-center">  
         <h1>Reestablecer contraseña</h1>
-        <ion-input aria color="primary" placeholder="Correo Electrónico" [(ngModel)]="correoElectronico"></ion-input>
+        <br>
+        <br>
+        <ion-input aria color="primary" placeholder="Ingresa una nueva contraseña"></ion-input>
+        <ion-input aria color="primary" placeholder="Repite la nueva contraseña"></ion-input>
       </div>
        <br>
        <br>
        
-       <ion-button fill="outline" (click)="mostrarAlerta()">Enviar Correo!</ion-button>
+       <ion-button routerLink="/home" fill="outline" (click)="mostrarAlerta()">Confirmar</ion-button>
       <br>
       <br>
       
