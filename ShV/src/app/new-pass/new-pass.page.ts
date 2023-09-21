@@ -17,7 +17,7 @@ export class NewPassPage implements OnInit {
   async mostrarAlerta() {
     const alert = await this.alertController.create({
       header: '',
-      message: `Su contraseña ha sido reestablecida. Inicie sesión nuevamente. ${this.correoElectronico}`,
+      message: `Hemos enviado un correo a: ${this.correoElectronico}`,
       buttons: ['OK'],
     });
   
