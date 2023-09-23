@@ -1,0 +1,35 @@
+ion-content {
+    display: flex;
+    flex-direction: column; /* Las tarjetas estarán apiladas verticalmente */
+    align-items: center; /* Centra las tarjetas horizontalmente */
+    justify-content: center; /* Centra las tarjetas verticalmente en la página */
+    height: 95vh; /* Establece la altura del contenedor para que ocupe el 100% del alto de la ventana */
+    text-align: center;
+}
+  
+  ion-card {
+    color: white;
+    opacity: 0.5;
+    background: blue;
+    max-width: 370px;
+    text-align: center;
+    position: center;
+  
+    --background: red;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    ion-card {
+      --background: green;
+      position: center;
+    }
+  }
+  ion-button{
+    position: center;
+  }
+  ion-card-content{
+    position: center;
+  }
+  ion-title{
+    text-align: center;
+  }
