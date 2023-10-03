@@ -16,13 +16,13 @@
         <h1>Bienvenido!</h1>
         <br>
         <br>
-        <ion-input aria color="primary" placeholder="Usuario"></ion-input>
-        <ion-input aria color="primary" placeholder="Password"></ion-input>
-      </div>
+        <ion-input [(ngModel)]="usuario" aria-label="Usuario" color="primary" placeholder="Usuario"></ion-input>
+        <ion-input [(ngModel)]="contrasena" aria-label="Password" color="primary" placeholder="Password" type="password"></ion-input>
+        </div>
       
        <br>
        <br>
-      <ion-button routerLink="/main" fill="outline" class="ion-activatable">Ingresar</ion-button>  <ion-button routerLink="/prueba"fill="outline" class="ion-activatable">Registro</ion-button>
+      <ion-button routerLink="/main" fill="outline" class="ion-activatable" (click)="login()">Ingresar</ion-button>  <ion-button routerLink="/prueba"fill="outline" class="ion-activatable">Registro</ion-button>
       <br>
       <br>
       <br>
