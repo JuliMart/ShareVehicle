@@ -6,6 +6,9 @@
   top: 50%;
   transform: translateY(-50%);
 }
+.content{
+  top: 52%;
+}
 
 #container strong {
   font-size: 20px;
@@ -26,4 +29,9 @@
 }
 .ion-input-center{
   color: black;
+}
+h1{
+  text-align: center;
+  font-size: 46pt;
+  font-weight: bold;
 }
