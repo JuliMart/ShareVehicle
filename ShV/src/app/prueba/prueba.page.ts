@@ -9,7 +9,7 @@ import { Animation, AnimationController } from '@ionic/angular';
 export class PruebaPage {
   @ViewChild('card', { read: ElementRef }) card!: ElementRef<HTMLIonCardElement>;
 
-  private animation: Animation | undefined; // Inicializamos con 'undefined'
+  private animation: Animation | undefined; 
 
   constructor(private animationCtrl: AnimationController) {}
 
