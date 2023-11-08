@@ -1,5 +1,3 @@
-
-
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
@@ -7,31 +5,25 @@
     </ion-toolbar>
   </ion-header>
 
-  <body>
-    <div class="bg"></div>
-    <div class="bg bg2"></div>
-    <div class="bg bg3"></div>    
-    <h1>TeLlevoAPP</h1>
-    <div class="content">
-      <div class="ion-input-center">  
-        <br>
-        <br>
-        <ion-input [(ngModel)]="usuario" aria-label="Usuario" color="primary" placeholder="Usuario"></ion-input>
-        <ion-input [(ngModel)]="contrasena" aria-label="Password" color="primary" placeholder="Password" type="password"></ion-input>
-        </div>
-      
-       <br>
-       <br>
-      <ion-button routerLink="/main" fill="outline" class="ion-activatable" (click)="login()">Ingresar</ion-button>  <ion-button routerLink="/prueba"fill="outline" class="ion-activatable">Registro</ion-button>
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>    
+  <h1>TeLlevoAPP</h1>
+  <div class="content">
+    <div class="ion-input-center">  
       <br>
       <br>
-      <br>
-      <ion-router-link routerLink="/new-pass">Olvidé mi contraseña</ion-router-link>
-
-
-
-      
+      <ion-input [(ngModel)]="usuario" aria-label="Usuario" color="primary" placeholder="Usuario"></ion-input>
+      <ion-input [(ngModel)]="contrasena" aria-label="Password" color="primary" placeholder="Password" type="password"></ion-input>
     </div>
     
-    </body>
+    <br>
+    <br>
+    <ion-button routerLink="/main" fill="outline" class="ion-activatable" (click)="login()">Ingresar</ion-button>  
+    <ion-button routerLink="/registro" fill="outline" class="ion-activatable">Registro</ion-button>
+    <br>
+    <br>
+    <br>
+    <ion-router-link routerLink="/new-pass">Olvidé mi contraseña</ion-router-link>
+  </div>
 </ion-content>
