@@ -36,16 +36,16 @@ export class StorageService {
   }
 
 
-  async guardarUsuario(usuario: Usuario[]) {
+  async guardarUsuario(usuario:Usuario[]){
     var usuarios = await this.obtenerUsuario();
     for (const i of usuarios) {
       if (i) {
         usuario.push(i);
       }
     }
-    this.setItem(storageUsuario, JSON.stringify(usuario));
+    this.setItem(storageUsuario,JSON.stringify(usuario));
   }
-  
+
 
 
 }
