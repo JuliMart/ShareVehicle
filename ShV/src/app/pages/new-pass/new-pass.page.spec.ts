@@ -5,11 +5,15 @@ describe('NewPassPage', () => {
   let component: NewPassPage;
   let fixture: ComponentFixture<NewPassPage>;
 
-  beforeEach(async(() => {
+  beforeEach(() => {
+    TestBed.configureTestingModule({
+      declarations: [NewPassPage],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(NewPassPage);
     component = fixture.componentInstance;
     fixture.detectChanges();
-  }));
+  });
 
   it('should create', () => {
     expect(component).toBeTruthy();

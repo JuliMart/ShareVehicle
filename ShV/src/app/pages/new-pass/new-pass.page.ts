@@ -13,5 +13,9 @@ export class NewPassPage implements OnInit {
   ngOnInit() { }
 
   reset() {
+<<<<<<< HEAD
+=======
+    // Agrega lógica para restablecer la contraseña
+>>>>>>> 8a04bccfade98ba203b815198442f549e4cccee5
   }
 }

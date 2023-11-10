@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
@@ -33,8 +34,44 @@ const routes: Routes = [
   {
     path: 'reset-password',
     loadChildren: () => import('./pages/reset-password/reset-password.module').then( m => m.ResetPasswordPageModule)
-  },
+=======
+import { NgModule } from '@angular/core';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
+const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'login',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: () => import('./pages/main/main-routing.module').then(m => m.MainPageRoutingModule)
+  },
+  {
+    path: 'new-pass',
+    loadChildren: () => import('src/app/pages/new-pass/new-pass.module').then(m => m.NewPassPageModule)
+  },
+  {
+    path: 'main',
+    loadChildren: () => import('./pages/main/main.module').then( m => m.MainPageModule)
+  },
+  {
+    path: 'prueba',
+    loadChildren: () => import('./pages/prueba/prueba.module').then( m => m.PruebaPageModule)
+>>>>>>> 8a04bccfade98ba203b815198442f549e4cccee5
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./pages/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./pages/login/login.module').then( m => m.LoginPageModule)
+  }
+
+
+<<<<<<< HEAD
 
 
 
@@ -47,3 +84,16 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+=======
+
+
+];
+
+@NgModule({
+  imports: [
+    RouterModule.forRoot(routes, { preloadingStrategy: PreloadAllModules })
+  ],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+>>>>>>> 8a04bccfade98ba203b815198442f549e4cccee5
