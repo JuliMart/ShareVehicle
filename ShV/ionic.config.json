@@ -1,5 +1,7 @@
 {
-  "name": "ShV",
-  "integrations": {},
+  "name": "myFirstApp",
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
