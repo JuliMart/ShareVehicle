@@ -9,11 +9,12 @@ const routes: Routes = [
   },
   {
     path: 'home',
-    loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
+    loadChildren: () => import('./pages/main/main-routing.module').then(m => m.MainPageRoutingModule)
   },
+
   {
-    path: 'new-pass', // Ruta para la página de recuperación de contraseña
-    loadChildren: () => import('./new-pass/new-pass.module').then(m => m.NewPassPageModule)
+    path: 'new-pass',
+    loadChildren: () => import('src/app/pages/new-pass/new-pass.module').then(m => m.NewPassPageModule)
   },
   {
     path: 'main',
